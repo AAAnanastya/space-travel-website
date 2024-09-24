@@ -1,21 +1,91 @@
-body,
-html {
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  background-color: grey; /* временно */
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-blue-300: #d0d6f9;
+  --color-blue-900: #0b0d17;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  margin-top: 5rem;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 144px;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 171.9%;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 33.6%;
+  color: var(--color-blue-300);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  color: var(--color-blue-300);
+  line-height: 180%;
+  margin: 0;
+  padding: 0;
+}
+
+.representation-container {
+  width: 33.75rem;
+}
+
+.button-allwhite {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-white);
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 36.7%;
+  color: var(--color-blue-900);
+  padding: 0;
+  margin-bottom: 2.219rem;
 }
 
 /* Header styles */
 
 header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   margin-top: 2.5rem;
@@ -33,7 +103,7 @@ header nav {
   z-index: 1;
   flex-direction: row;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   height: -webkit-fill-available;
   width: 51%;
@@ -50,25 +120,26 @@ header nav ul {
 }
 
 .list {
-  font-family: 'Rajdhani', sans-serif;
-  font-weight: 400;
-  font-size: 19px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 2px;
   text-decoration: none;
-  color: white;
+  color: var(--color-white);
   padding-bottom: 35px;
   border-bottom: 3px solid transparent;
   transition: border-bottom 0.3s ease;
 
   &:hover {
     padding-bottom: 35px;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
     transition: border-bottom 0.3s ease;
   }
 }
 
 .active {
   padding-bottom: 35px;
-  border-bottom: 3px solid white;
+  border-bottom: 3px solid var(--color-white);
   transition: border-bottom 0.3s ease;
 }
 
@@ -76,7 +147,91 @@ header nav ul {
   position: absolute;
   z-index: 2;
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   width: 560px;
   margin-left: 11rem;
+}
+
+/* Home Page styles */
+
+.home-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+
+.home-page-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 24.75rem 10.313rem 8rem 10.313rem;
+  height: 31.25rem;
+  width: 1100px;
+}
+
+.test {
+  background-color: beige;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.destination-page-container {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+.crew-page-container {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
+}
+
+.technology-page-container {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+  }
 }
