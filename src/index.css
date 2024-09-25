@@ -24,11 +24,12 @@ html {
   --color-blue-900: #0b0d17;
 }
 
+/* Text styles */
+
 h1 {
   font-family: 'Bellefair', serif;
   font-weight: 400;
   font-size: 144px;
-  font-style: normal;
   text-transform: uppercase;
   line-height: 171.9%;
   color: var(--color-white);
@@ -37,11 +38,42 @@ h1 {
 }
 
 h2 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 100px;
+  text-transform: uppercase;
+  line-height: 114.6%;
+  color: var(--color-white);
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+h3 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 56px;
+  text-transform: uppercase;
+  line-height: 64.2%;
+  color: var(--color-white);
+  margin: 2.5rem 0;
+}
+
+h4 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 36.7%;
+  color: var(--color-white);
+  opacity: 0.5;
+  margin: 1rem 0;
+}
+
+h5 {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: 28px;
   letter-spacing: 4px;
-  font-style: normal;
   text-transform: uppercase;
   line-height: 33.6%;
   color: var(--color-blue-300);
@@ -60,36 +92,10 @@ h2 {
   padding-top: 0.625rem;
 }
 
-h3 {
-  font-family: 'Bellefair', serif;
-  font-weight: 400;
-  font-size: 100px;
-  font-style: normal;
-  text-transform: uppercase;
-  line-height: 114.6%;
-  color: var(--color-white);
-  margin: 0 0 1rem;
-  padding: 0;
-}
-
-h4 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-style: normal;
-  text-transform: uppercase;
-  line-height: 19.2%;
-  color: var(--color-blue-300);
-  margin: 0;
-  padding: 0;
-}
-
-h5 {
+.p-1 {
   font-family: 'Bellefair', serif;
   font-weight: 400;
   font-size: 28px;
-  font-style: normal;
   text-transform: uppercase;
   line-height: 32.1%;
   color: var(--color-white);
@@ -97,7 +103,31 @@ h5 {
   padding: 0;
 }
 
-p {
+.p-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 16.8%;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.p-3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 19.2%;
+  letter-spacing: 2px;
+  color: var(--color-white);
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.p-4 {
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -252,12 +282,6 @@ header nav ul {
   margin-top: 1rem;
 }
 
-.content-page-content img {
-  width: 30rem;
-  height: 30rem;
-  margin: 7.938rem 1.844rem;
-}
-
 /* Destination page styles */
 
 .destination-page-container {
@@ -321,6 +345,12 @@ header nav ul {
   transition: border-bottom 0.3s ease;
 }
 
+.planet-image {
+  width: 30rem;
+  height: 30rem;
+  margin: 7.938rem 1.844rem;
+}
+
 .planets-description-container {
   width: 28rem;
   margin: 7.938rem 2.938rem;
@@ -345,17 +375,45 @@ header nav ul {
   width: 13.156rem;
 }
 
+/* Crew Page Styles */
+
 .crew-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   &::before {
     content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: inherit;
     width: 100%;
     height: 100%;
     background-image: url(../public/assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(
+      to top,
+      rgba(11, 13, 23),
+      rgba(11, 13, 23),
+      rgba(11, 13, 23, 0.99),
+      rgba(11, 13, 23, 0.95),
+      rgba(11, 13, 23, 0.85),
+      rgba(11, 13, 23, 0.7),
+      rgba(11, 13, 23, 0.3),
+      rgba(11, 13, 23, 0)
+    );
     z-index: -1;
   }
 }

@@ -1,17 +1,17 @@
 export default function PlanetsRepresentation({ planet, distance, travelTime, children }) {
   return (
     <div>
-      <h3>{planet}</h3>
-      <p>{children}</p>
+      <h2>{planet}</h2>
+      <p className="p-4">{children}</p>
       <hr className="styled-line-2" />
       <div className="planet-statistics-container">
         <div className="planet-statistics-content">
-          <h4>Avg. distance</h4>
-          <h5>{distance}</h5>
+          <p className="p-2">Avg. distance</p>
+          <p className="p-1">{distance}</p>
         </div>
         <div className="planet-statistics-content">
-          <h4>Est. travel time</h4>
-          <h5>{travelTime}</h5>
+          <p className="p-2">Est. travel time</p>
+          <p className="p-1">{travelTime}</p>
         </div>
       </div>
     </div>

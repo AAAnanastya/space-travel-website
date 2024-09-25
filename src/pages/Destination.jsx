@@ -15,7 +15,7 @@ export default function DestinationPage() {
       <div className="content-page-container">
         <PageTitle pageNumber="01">Pick your destination</PageTitle>
         <main className="content-page-content">
-          <img src={PLANETS[selectedPlanet].image} alt={PLANETS[selectedPlanet].title} />
+          <img src={PLANETS[selectedPlanet].image} alt={PLANETS[selectedPlanet].title} className="planet-image" />
           <div className="planets-description-container">
             <nav>
               <ul>
