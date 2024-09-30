@@ -1,0 +1,105 @@
+.technology-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/assets/technology/background-technology-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+
+.technology-page-content-container {
+  margin: 8.5rem 0 3rem 10.313rem;
+  padding-top: 3rem;
+}
+
+.technology-page-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45.875rem;
+}
+
+.technology-hero {
+  display: inherit;
+  flex-direction: row;
+  width: 50%;
+}
+
+.technology-hero nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.technology-img-container {
+  width: 48%;
+  overflow: hidden;
+  order: 2;
+}
+
+.technology-navigation-button-inactive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  padding: 0;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: border 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+
+  &:hover {
+    border: 1px solid var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-blue-900);
+    transition: border 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+  }
+}
+
+.technology-navigation-button-active {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+  background-color: var(--color-white);
+  padding: 0;
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 36.7%;
+  color: var(--color-blue-900);
+  transition: border 0.8s ease, background-color 0.8s ease, color 0.8s ease;
+}
+
+.technology-img-container img {
+  width: 100%;
+  height: 37.5rem;
+  object-fit: cover;
+}
+
+.technology-hero-story {
+  margin-left: 4rem;
+}

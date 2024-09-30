@@ -14,6 +14,7 @@ export default function PageContent({
   initialSelector,
   imgStyle,
   imgAdditionalStyling,
+  buttonNav,
   navElStyle,
   activeNavElStyle,
   heroType,
@@ -40,6 +41,7 @@ export default function PageContent({
             onClick={handleSelector}
             activeNavStyle={activeNavElStyle}
             navStyle={navElStyle}
+            buttonNav={buttonNav}
           />
 
           <ContentText heroType={heroType} element={selectedElement}>
