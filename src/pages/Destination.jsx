@@ -14,6 +14,9 @@ export default function DestinationPage() {
         data={PLANETS}
         initialSelector={Object.keys(PLANETS)[0]}
         imgStyle="planet-image"
+        navElStyle="planet-list"
+        activeNavElStyle="active-planet"
+        heroType="Planet"
       />
     </div>
   );
