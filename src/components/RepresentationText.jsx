@@ -1,4 +1,4 @@
-export default function PlanetsRepresentation({ planet, distance, travelTime, children }) {
+export default function RepresentationText({ planet, distance, travelTime, children }) {
   return (
     <div>
       <h2>{planet}</h2>
