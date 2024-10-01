@@ -1,0 +1,17 @@
+.pageTitleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  height: 2.125rem;
+}
+
+.pageNumber {
+  font-weight: 600;
+  color: var(--color-white-30);
+  padding-top: 0.625rem;
+}
+
+.pageTitle {
+  color: var(--color-white);
+  padding-top: 0.625rem;
+}

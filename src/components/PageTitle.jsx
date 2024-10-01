@@ -1,8 +1,10 @@
+import styles from './PageTitle.module.css';
+
 export default function PageTitle({ pageNumber, children }) {
   return (
-    <div className="page-title-container">
-      <h5 className="page-number">{pageNumber}</h5>
-      <h5 className="page-title">{children}</h5>
+    <div className={styles.pageTitleContainer}>
+      <h5 className={styles.pageNumber}>{pageNumber}</h5>
+      <h5 className={styles.pageTitle}>{children}</h5>
     </div>
   );
 }

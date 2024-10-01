@@ -1,13 +1,13 @@
 import { NavLink } from 'react-router-dom';
-import '../index.css';
+import styles from './MainNavigation.module.css';
 
-const listStyle = ({ isActive }) => `${isActive ? 'active' : ''} list`;
+const listStyle = ({ isActive }) => `${isActive ? styles.active : ''} ${styles.list}`; // Используйте объект стилей
 
 export default function MainNavigation() {
   return (
     <header>
       <img src={`${process.env.PUBLIC_URL}/assets/shared/logo.svg`} alt="Logo" />
-      <hr className="styled-line" />
+      <hr className={styles.styledLine} />
       <nav>
         <ul>
           <li>
