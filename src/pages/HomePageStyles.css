@@ -1,0 +1,50 @@
+.home-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: inherit;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 24.75rem 10.313rem 8rem 10.313rem;
+  height: 31.25rem;
+  width: 1100px;
+}
+
+.representation-container {
+  width: 33.75rem;
+}
+
+.hero-button {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-white);
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 36.7%;
+  color: var(--color-blue-900);
+  padding: 0;
+  margin-bottom: 2.219rem;
+}

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
-import Button from '../components/Button';
-import Representation from '../components/Representation';
+import HomeHero from '../components/HomeHero';
+import './HomePageStyles.css';
 
 export default function HomePage() {
   const navigate = useNavigate();
@@ -11,15 +11,10 @@ export default function HomePage() {
   }
   return (
     <div className="home-page-container">
-      <main className="hero-container">
-        <Representation subtitle="So, you want to travel to" title="Space">
-          Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
-          Well sit back, and relax because we’ll give you a truly out of this world experience!
-        </Representation>
-        <Button style="button-allwhite" onClick={moveToDestinationPage}>
-          EXPLORE
-        </Button>
-      </main>
+      <HomeHero subtitle="So, you want to travel to" title="Space" buttonStyle="hero-button" onButtonClick={moveToDestinationPage}>
+        Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
+        Well sit back, and relax because we’ll give you a truly out of this world experience!
+      </HomeHero>
     </div>
   );
 }
