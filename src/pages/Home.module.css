@@ -1,0 +1,30 @@
+/* Home Page Container */
+.home-page-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../public/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top top;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+  }
+}
+
+/* Tablet adapive */
+@media (max-width: 991px) {
+  .home-page-container::before {
+    background-image: url(../../public/assets/home/background-home-tablet.jpg);
+  }
+}

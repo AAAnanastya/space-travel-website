@@ -1,22 +1,22 @@
 import PageContent from '../components/PageContent';
 import { TECHNOLOGIES } from '../data';
-import './TechnologyPageStyles.css';
+import styles from './Technology.module.css';
 
 export default function TechnologyPage() {
   return (
-    <div className="technology-page-container">
+    <div className={styles['technology-page-container']}>
       <PageContent
-        pageGrid="technology-page-content-container"
-        pageContentGrid="technology-page-content"
-        contentGrid="technology-hero"
+        pageGrid={styles['technology-page-content-container']}
+        pageContentGrid={styles['technology-page-content']}
+        contentGrid={styles['technology-hero']}
         pageNumber="03"
         pageTitle="Space Launch 101"
         data={TECHNOLOGIES}
         initialSelector={Object.keys(TECHNOLOGIES)[0]}
-        imgStyle="technology-img-container"
+        imgStyle={styles['technology-img-container']}
         buttonNav
-        navElStyle="technology-navigation-button-inactive"
-        activeNavElStyle="technology-navigation-button-active"
+        navElStyle={styles['technology-navigation-button-inactive']}
+        activeNavElStyle={styles['technology-navigation-button-active']}
         heroType="Technology"
       />
     </div>

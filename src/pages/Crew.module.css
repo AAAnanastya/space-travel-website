@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: auto;
 
   &::before {
     content: '';
@@ -40,6 +41,14 @@
     );
     z-index: -1;
   }
+}
+
+/* Common page container */
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
 
 /* Crew Hero Representation */
@@ -117,9 +126,83 @@
 
 .crew-navigation-list:hover,
 .active-crew-member {
-  display: block;
   border-radius: 100%;
   background-color: var(--color-white);
   opacity: 1;
   transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+/* Tablet adaptive */
+@media (max-width: 991px) {
+  .destination-page-container::before {
+    background-image: url(../../public/assets/destination/background-destination-tablet.jpg);
+  }
+  .crew-page-container::after {
+    display: none;
+  }
+
+  .content-page-container {
+    margin-top: 6rem;
+    padding: 3rem 3rem 0;
+  }
+
+  .content-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .crew-representation-hero {
+    margin-top: 5rem;
+    height: 23.5rem;
+    width: 39rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .crew-hero-image {
+    width: 31rem;
+    height: 33.5rem;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .crew-hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .crew-hero-image-gradient {
+    display: none;
+  }
+}
+/* Small desk screen adapive */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .content-page-container {
+    margin-top: 8.5rem;
+    padding: 3rem 7rem;
+  }
+}
+/* Medium desk screen adapive */
+@media (min-width: 1300px) and (max-width: 1599px) {
+  .content-page-container {
+    margin-top: 8.5rem;
+    padding: 3rem 10.313rem;
+  }
+}
+/* Large desk screen adapive */
+@media (min-width: 1600px) {
+  .content-page-container {
+    margin-top: 8.5rem;
+    padding: 3rem 15rem;
+  }
+
+  .content-container {
+    justify-content: center;
+    gap: 5rem;
+  }
 }

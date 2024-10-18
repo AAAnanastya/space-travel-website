@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: au;
 
   &::before {
     content: '';
@@ -22,11 +23,6 @@
 }
 
 /* Content Page Styles */
-.content-page-container {
-  margin-top: 8.5rem;
-  padding: 3rem 10.313rem;
-}
-
 .content-container {
   display: flex;
   flex-direction: row;
@@ -85,23 +81,71 @@
   border-bottom: 3px solid var(--color-white);
 }
 
-/* Styled Line */
-.styled-line-2 {
-  border: none;
-  border-top: 1px solid var(--color-white-25);
-  margin: 2.5rem 0;
-}
+/* Tablet adapive */
+@media (max-width: 991px) {
+  .destination-page-container::before {
+    background-image: url(../../public/assets/destination/background-destination-tablet.jpg);
+  }
 
-/* Planet Statistics Styles */
-.planet-statistics-container {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-}
+  .content-page-container {
+    margin-top: 6rem;
+    padding: 3rem 3rem 0;
+  }
 
-.planet-statistics-content {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 13.156rem;
+  .content-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+
+  .planet-image {
+    margin: 5rem 0 0;
+    width: 22rem;
+    height: 22rem;
+    object-fit: contain;
+  }
+
+  .planet-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .planets-description-container {
+    width: 28rem;
+    margin: 6rem 0;
+  }
+
+  .planets-description-container nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* Small desk screen adapive */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .content-page-container {
+    margin-top: 8.5rem;
+    padding: 3rem 7rem;
+  }
+}
+/* Medium desk screen adapive */
+@media (min-width: 1300px) and (max-width: 1599px) {
+  .content-page-container {
+    margin-top: 8.5rem;
+    padding: 3rem 10.313rem;
+  }
+}
+/* Large desk screen adapive */
+@media (min-width: 1600px) {
+  .content-page-container {
+    margin-top: 8.5rem;
+    padding: 3rem 15rem;
+  }
+
+  .content-container {
+    justify-content: center;
+    gap: 5rem;
+  }
 }

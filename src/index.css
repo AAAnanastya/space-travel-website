@@ -25,7 +25,9 @@ html {
   --color-white-50: rgba(255, 255, 255, 0.5);
   --color-white-30: rgba(255, 255, 255, 0.3);
   --color-white-25: rgba(255, 255, 255, 0.25);
+  --color-white-15: rgba(255, 255, 255, 0.15);
   --color-white-05: rgba(255, 255, 255, 0.05);
+  --color-grey: #808080;
   --color-blue-300: #d0d6f9;
   --color-blue-900: #0b0d17;
 }
@@ -116,17 +118,4 @@ h5 {
   font-size: 18px;
   line-height: 180%;
   color: var(--color-blue-300);
-}
-
-/* Common page container */
-.content-page-container {
-  margin-top: 8.5rem;
-  padding: 3rem 10.313rem;
-}
-
-.content-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 1rem;
 }

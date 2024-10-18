@@ -1,0 +1,29 @@
+/* styles for heroType === 'Planet' */
+
+/* Styled Line */
+.styled-line {
+  border: none;
+  border-top: 1px solid var(--color-white-25);
+  margin: 2.5rem 0;
+}
+
+/* Planet Statistics Styles */
+.planet-statistics-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.planet-statistics-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 13.156rem;
+}
+
+/* Tablet adapive */
+@media (max-width: 991px) {
+  .styled-line {
+    margin: 1.5rem 0;
+  }
+}

@@ -1,6 +1,8 @@
-export default function ContentText({ heroStyle, heroType, element, children }) {
+import styles from './ContentText.module.css';
+
+export default function ContentText({ heroType, element, children }) {
   return (
-    <div className={heroStyle}>
+    <div>
       {heroType === 'Planet' && <h2>{element.title}</h2>}
       {heroType === 'Crew' && (
         <>
@@ -19,13 +21,13 @@ export default function ContentText({ heroStyle, heroType, element, children }) 
 
       {heroType === 'Planet' && (
         <>
-          <hr className="styled-line-2" />
-          <div className="planet-statistics-container">
-            <div className="planet-statistics-content">
+          <hr className={styles['styled-line']} />
+          <div className={styles['planet-statistics-container']}>
+            <div className={styles['planet-statistics-content']}>
               <p className="p-2">Avg. distance</p>
               <p className="p-1">{element.distance}</p>
             </div>
-            <div className="planet-statistics-content">
+            <div className={styles['planet-statistics-content']}>
               <p className="p-2">Est. travel time</p>
               <p className="p-1">{element.travelTime}</p>
             </div>

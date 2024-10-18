@@ -28,10 +28,8 @@ header nav {
 header nav ul {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
   list-style: none;
   margin: 0;
-  padding-left: 9rem;
 }
 
 /* Link Styles */
@@ -63,4 +61,61 @@ header nav ul {
   border-top: 1px solid var(--color-white-25);
   width: 560px;
   margin-left: 11rem;
+}
+
+/* Tablet adapive */
+@media (max-width: 991px) {
+  header {
+    margin: 0;
+  }
+
+  header img {
+    margin-left: 3rem;
+  }
+
+  header nav {
+    width: 81%;
+  }
+
+  header nav ul {
+    gap: 2.5rem;
+    padding-left: 6rem;
+  }
+
+  .styledLine {
+    display: none;
+  }
+}
+/* Small desk screen adapive */
+@media (min-width: 992px) and (max-width: 1399px) {
+  header nav ul {
+    gap: 1rem;
+    padding-left: 5rem;
+  }
+
+  .styledLine {
+    width: 400px;
+  }
+}
+/* Medium desk screen adapive */
+@media (min-width: 1300px) and (max-width: 1599px) {
+  header nav ul {
+    gap: 3rem;
+    padding-left: 9rem;
+  }
+
+  .styledLine {
+    width: 560px;
+  }
+}
+/* Large desk screen adapive */
+@media (min-width: 1600px) {
+  header nav ul {
+    gap: 5rem;
+    padding-left: 12rem;
+  }
+
+  .styledLine {
+    width: 820px;
+  }
 }

@@ -1,22 +1,22 @@
 import PageContent from '../components/PageContent';
 import { CREW } from '../data';
-import './CrewPageStyles.css';
+import styles from './Crew.module.css';
 
 export default function CrewPage() {
   return (
-    <div className="crew-page-container">
+    <div className={styles['crew-page-container']}>
       <PageContent
-        pageGrid="content-page-container"
-        pageContentGrid="content-container"
-        contentGrid="crew-representation-hero"
+        pageGrid={styles['content-page-container']}
+        pageContentGrid={styles['content-container']}
+        contentGrid={styles['crew-representation-hero']}
         pageNumber="02"
         pageTitle="Meet your crew"
         data={CREW}
         initialSelector={Object.keys(CREW)[0]}
-        imgStyle="crew-hero-image"
-        imgAdditionalStyling="crew-hero-image-gradient"
-        navElStyle="crew-navigation-list"
-        activeNavElStyle="active-crew-member"
+        imgStyle={styles['crew-hero-image']}
+        imgAdditionalStyling={styles['crew-hero-image-gradient']}
+        navElStyle={styles['crew-navigation-list']}
+        activeNavElStyle={styles['active-crew-member']}
         heroType="Crew"
       />
     </div>
