@@ -4,11 +4,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
 
   &::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,8 +22,20 @@
   }
 }
 
+/* Phones and portrait tablets */
+@media (max-width: 767px) {
+  .home-page-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .home-page-container::before {
+    background-image: url(../../public/assets/home/background-home-mobile.jpg);
+  }
+}
+
 /* Tablet adapive */
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .home-page-container::before {
     background-image: url(../../public/assets/home/background-home-tablet.jpg);
   }

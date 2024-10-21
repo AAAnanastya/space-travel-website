@@ -37,11 +37,52 @@
   outline-color: var(--color-white-15);
 }
 
-/* Tablet adapive */
-@media (max-width: 991px) {
-  .home-page-container::before {
-    background-image: url(../../public/assets/home/background-home-tablet.jpg);
+p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 180%;
+  font-size: 18px;
+  color: var(--color-blue-300);
+}
+
+/* Phones and portrait tablets */
+@media (max-width: 767px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    gap: 10%;
+    margin: 7rem 0 0;
   }
+  .representation-container {
+    width: 20.438rem;
+  }
+
+  .hero-button {
+    height: 9rem;
+    width: 9rem;
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+/* Tablet adapive */
+@media (min-width: 768px) and (max-width: 991px) {
   .hero-container {
     flex-direction: column;
     justify-content: center;
@@ -64,7 +105,8 @@
 @media (min-width: 1300px) and (max-width: 1599px) {
   .hero-container {
     max-width: 1100px;
-    margin: 24.75rem 10.313rem 8rem;
+    margin: 24.75rem 10.313rem;
+    padding-bottom: 8rem;
   }
 }
 /* Large desk screen adapive */

@@ -7,7 +7,7 @@ export default function HomeHero({ subtitle, title, onButtonClick, children }) {
       <div className={styles['representation-container']}>
         <h5>{subtitle}</h5>
         <h1>{title}</h1>
-        <p className="p-4">{children}</p>
+        <p>{children}</p>
       </div>
       <Button style={styles['hero-button']} onClick={onButtonClick}>
         EXPLORE
