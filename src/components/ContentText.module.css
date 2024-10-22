@@ -21,8 +21,89 @@
   width: 13.156rem;
 }
 
+h2 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0;
+  font-size: 100px;
+  line-height: 114.6%;
+  margin-bottom: 1rem;
+}
+
+h3,
+h4 {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h3 {
+  font-size: 56px;
+  line-height: 120%;
+  margin: 1.8rem 0;
+  color: var(--color-white);
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 36.7%;
+  opacity: 0.5;
+  margin: 1rem 0;
+  color: var(--color-white-50);
+}
+
+.p-4 {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  color: var(--color-blue-300);
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 64px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 24px;
+    margin: 1rem 0;
+  }
+
+  .p-4 {
+    font-size: 15px;
+  }
+
+  .styled-line {
+    margin: 1.5rem 0;
+  }
+
+  .planet-statistics-container {
+    flex-direction: column;
+  }
+
+  .planet-statistics-content {
+    width: auto;
+  }
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
 /* Tablet adapive */
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .styled-line {
     margin: 1.5rem 0;
   }

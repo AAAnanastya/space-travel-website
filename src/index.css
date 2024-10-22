@@ -4,6 +4,7 @@ body {
   padding: 0;
   width: 100vw;
   overscroll-behavior: none;
+  background-color: black;
 }
 
 * {
@@ -17,6 +18,10 @@ body::-webkit-scrollbar {
 html {
   overflow: -moz-scrollbars-none;
   -ms-overflow-style: none;
+}
+
+nav {
+  -webkit-tap-highlight-color: transparent;
 }
 
 /* Color Variables */
@@ -34,9 +39,7 @@ html {
 
 /* Typography styles */
 h1,
-h2,
-h3,
-h4 {
+h2 {
   font-family: 'Bellefair', serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -53,19 +56,6 @@ h2 {
   font-size: 100px;
   line-height: 114.6%;
   margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 56px;
-  line-height: 120%;
-  margin: 1.8rem 0;
-}
-
-h4 {
-  font-size: 32px;
-  line-height: 36.7%;
-  opacity: 0.5;
-  margin: 1rem 0;
 }
 
 h5 {
@@ -118,4 +108,14 @@ h5 {
   font-size: 18px;
   line-height: 180%;
   color: var(--color-blue-300);
+}
+
+/* Content/page animations */
+.fade {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
 }

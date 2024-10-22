@@ -1,10 +1,23 @@
+import { useEffect, useState } from 'react';
+
 import PageContent from '../components/PageContent';
 import { CREW } from '../data';
 import styles from './Crew.module.css';
+import '../index.css';
 
 export default function CrewPage() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+
+    return () => {
+      setIsVisible(false);
+    };
+  }, []);
+
   return (
-    <div className={styles['crew-page-container']}>
+    <div className={`${styles['crew-page-container']} fade ${isVisible ? 'show' : ''}`}>
       <PageContent
         pageGrid={styles['content-page-container']}
         pageContentGrid={styles['content-container']}
