@@ -1,0 +1,142 @@
+/* Hero Section Styles */
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 31.25rem;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.representation-container {
+  width: 33.75rem;
+}
+
+/* Hero Button Styles */
+.hero-button {
+  height: 17rem;
+  width: 17rem;
+  border-radius: 50%;
+  border: none;
+  outline: 80px solid transparent;
+  background-color: var(--color-white);
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-transform: uppercase;
+  line-height: 36.7%;
+  color: var(--color-blue-900);
+  padding: 0;
+  margin-bottom: 2.219rem;
+  transition: color 0.8s ease, outline-color 0.8s ease;
+}
+
+.hero-button:hover {
+  color: var(--color-grey);
+  outline-color: var(--color-white-15);
+}
+
+/* Typography styles */
+.title {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0;
+  font-size: 144px;
+  line-height: 171.9%;
+}
+
+.subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 33.6%;
+  color: var(--color-blue-300);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: 'Barlow', sans-serif;
+  line-height: 180%;
+  font-size: 18px;
+  color: var(--color-blue-300);
+}
+
+/* Phones and portrait tablets */
+@media (max-width: 767px) {
+  .hero-container {
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    gap: 10%;
+    margin: 7rem 0 0;
+  }
+  .representation-container {
+    width: 20.438rem;
+  }
+
+  .hero-button {
+    height: 9rem;
+    width: 9rem;
+    font-size: 18px;
+    outline: 20px solid transparent;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 80px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+/* Tablet adapive */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    height: 100%;
+    gap: 5rem;
+    margin: 15rem 0 0;
+  }
+}
+/* Small desk screen adapive */
+@media (min-width: 992px) and (max-width: 1399px) {
+  .hero-container {
+    max-width: 1100px;
+    margin: 24.75rem 10.313rem 8rem;
+  }
+}
+/* Medium desk screen adapive */
+@media (min-width: 1300px) and (max-width: 1599px) {
+  .hero-container {
+    max-width: 1100px;
+    margin: 24.75rem 10.313rem;
+    padding-bottom: 8rem;
+  }
+}
+/* Large desk screen adapive */
+@media (min-width: 1600px) {
+  .hero-container {
+    max-width: 1300px;
+    margin: 20rem 15rem 8rem;
+  }
+}
