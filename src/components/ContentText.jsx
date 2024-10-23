@@ -34,19 +34,19 @@ export default function ContentText({ heroType, element, children }) {
         </>
       )}
 
-      <p className={`${styles['p-4']} fade ${isVisible ? 'show' : ''}`}>{currentChildren}</p>
+      <p className={`${styles['p-3']} fade ${isVisible ? 'show' : ''}`}>{currentChildren}</p>
 
       {heroType === 'Planet' && (
         <>
           <hr className={styles['styled-line']} />
           <div className={styles['planet-statistics-container']}>
             <div className={styles['planet-statistics-content']}>
-              <p className="p-2">Avg. distance</p>
-              <p className={`p-1 fade ${isVisible ? 'show' : ''}`}>{currentElement.distance}</p>
+              <p className={styles['p-2']}>Avg. distance</p>
+              <p className={`${styles['p-1']} fade ${isVisible ? 'show' : ''}`}>{currentElement.distance}</p>
             </div>
             <div className={styles['planet-statistics-content']}>
-              <p className="p-2">Est. travel time</p>
-              <p className={`p-1 fade ${isVisible ? 'show' : ''}`}>{currentElement.travelTime}</p>
+              <p className={styles['p-2']}>Est. travel time</p>
+              <p className={`${styles['p-1']} fade ${isVisible ? 'show' : ''}`}>{currentElement.travelTime}</p>
             </div>
           </div>
         </>

@@ -37,6 +37,29 @@
   outline-color: var(--color-white-15);
 }
 
+/* Typography styles */
+.title {
+  font-family: 'Bellefair', serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin: 0;
+  font-size: 144px;
+  line-height: 171.9%;
+}
+
+.subtitle {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  line-height: 33.6%;
+  color: var(--color-blue-300);
+  margin: 0;
+  padding: 0;
+}
+
 p {
   font-family: 'Barlow', sans-serif;
   line-height: 180%;
@@ -67,11 +90,11 @@ p {
     font-size: 18px;
   }
 
-  h5 {
+  .subtitle {
     font-size: 16px;
   }
 
-  h1 {
+  .title {
     font-size: 80px;
   }
 

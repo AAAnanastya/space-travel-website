@@ -21,6 +21,7 @@
   width: 13.156rem;
 }
 
+/* Typography styles */
 h2 {
   font-family: 'Bellefair', serif;
   font-weight: 400;
@@ -55,7 +56,29 @@ h4 {
   color: var(--color-white-50);
 }
 
-.p-4 {
+.p-1,
+.p-2 {
+  margin: 1rem 0 0;
+}
+
+.p-1 {
+  font-family: 'Bellefair', serif;
+  font-size: 28px;
+  line-height: 32.1%;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.p-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 16.8%;
+  color: var(--color-blue-300);
+}
+
+.p-3 {
   font-family: 'Barlow', sans-serif;
   font-size: 18px;
   line-height: 180%;
@@ -76,7 +99,7 @@ h4 {
     margin: 1rem 0;
   }
 
-  .p-4 {
+  .p-3 {
     font-size: 15px;
   }
 
