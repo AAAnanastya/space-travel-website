@@ -25,7 +25,6 @@ export default function MainNavigation() {
 
   function menuOpener() {
     setMenuOpened(!menuOpened);
-    console.log('click');
   }
 
   return (
