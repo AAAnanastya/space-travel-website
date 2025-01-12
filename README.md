@@ -1,6 +1,6 @@
 # Frontend Mentor - Space tourism website solution
 
-С использованием дизайна, предоставленном в рамках [челленджа от Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3), было создано многостраничное SPA-приложение.
+С использованием дизайна, предоставленного в рамках [челленджа от Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3), было создано многостраничное SPA-приложение.
 
 
 ## Задача
