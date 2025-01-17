@@ -12,9 +12,9 @@
 
 ## Реализация
 
-Создано с использованием:
--   Семантической разметки HTML5
--   Пользовательских свойств CSS
+Разработано с использованием:
+-   HTML5
+-   CSS3
 -   JavaScript + React
 -   React Router
 
@@ -22,13 +22,13 @@
 
 ## Скриншоты
 #### Desktop
-![1_Home](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Home.png)
+![1_Home](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Home.jpeg)
 
-![2_Destination](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Destination.png)
+![2_Destination](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Destination.jpeg)
 
-![3_Crew](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Crew.png)
+![3_Crew](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Crew.jpeg)
 
-![4_Technology](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Technology.png)
+![4_Technology](https://github.com/AAAnanastya/space-travel-website/raw/main/Preview/Desk/Technology.jpeg)
 
 #### Mobile
 
